@@ -31,18 +31,25 @@
         // var geometry = new THREE.SphereGeometry(1, 10, 10);
 
         var geometry = new THREE.BoxGeometry(1, 1, 1);
-        var material = new THREE.MeshLambertMaterial({color: 0xFFCC00});
-        var mesh = new THREE.Mesh(geometry, material);
-        scene.add(mesh);
+        var material = new THREE.MeshLambertMaterial({color: 0xF7F7F7});
+        // var mesh = new THREE.Mesh(geometry, material);
+        // scene.add(mesh);
 
-        var geometry = new THREE.BoxGeometry(1, 1, 1);
-        var material = new THREE.MeshLambertMaterial({color: 0xFFCC00});
-        var mesh = new THREE.Mesh(geometry, material);
-        mesh.position.y = 2;
-        scene.add(mesh);
+        meshX = -10;
+        for (var i = 0; i<15;i++) {
+            var mesh = new THREE.Mesh(geometry, material);
+            mesh.position.x = (Math.random() - 0.5) * 10;
+            mesh.position.y = (Math.random() - 0.5) * 10;
+            mesh.position.z = (Math.random() - 0.5) * 10;
+            scene.add(mesh);
+            meshX+=1;
+        }
 
-        var light = new THREE.PointLight(0xFFFFFF, 1, 500)
-        light.position.set(10,0,25);
+        var light = new THREE.PointLight(0xFFFFFF, 1, 1000)
+        light.position.set(0,0,0);
+        scene.add(light);
+        var light = new THREE.PointLight(0xFFFFFF, 2, 1000)
+        light.position.set(0,0,25);
         scene.add(light);
         
         var render = function() {
@@ -60,8 +67,9 @@
             raycaster.setFromCamera(mouse, camera);
             var intersects = raycaster.intersectObjects(scene.children, true);
             for (var i = 0; i < intersects.length; i++) {
-                intersects[i].object.material.color.set(0xff0000);
+                
                 this.tl = new TimelineMax();
+                // this.tl.to(intersects[i].object.material.color.set(0xff0000));
                 this.tl.to(intersects[i].object.scale, .5, {x: 2, ease: Expo.easeOut})
                 this.tl.to(intersects[i].object.scale, .5, {x: 1, ease: Expo.easeOut})
                 this.tl.to(intersects[i].object.position, .5, {x: 1, ease: Expo.easeOut})
