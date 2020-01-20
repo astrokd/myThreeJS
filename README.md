@@ -9,6 +9,7 @@ Three JS learning repo
   * [Creating Custom 3D Objects for use with Three.js; DesignCourse](https://www.youtube.com/watch?v=-gipbcWCifc)
     - [https://www.vectary.com/](https://www.vectary.com/)
     - [https://codepen.io/designcourse/pen/ROYBeR](https://codepen.io/designcourse/pen/ROYBeR)
+    - [https://github.com/mrdoob/three.js](https://github.com/mrdoob/three.js)
 - learnThreejs
   * [https://www.youtube.com/channel/UCa4HiCMp9-3mRg2HpZvTJ9w](https://www.youtube.com/channel/UCa4HiCMp9-3mRg2HpZvTJ9w)
 - webGLearth
