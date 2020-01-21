@@ -22,22 +22,17 @@ window.addEventListener('resize', () => {
 
 // ------- end setup -------------------------------------------
 
-
 var raycaster = new THREE.Raycaster();
 var mouse = new THREE.Vector2();
-var geometry = new THREE.SphereGeometry(1, 10, 10);
+var geometry = new THREE.SphereGeometry(0.5, 32, 32);
 
-var material = new THREE.MeshLambertMaterial({color: 0xF7F7F7});
-// var mesh = new THREE.Mesh(geometry, material);
-// scene.add(mesh);
-
+var material = new THREE.MeshPhongMaterial();
 
 var mesh = new THREE.Mesh(geometry, material);
 mesh.position.x = 0;
 mesh.position.y = 0;
 mesh.position.z = 0;
 scene.add(mesh);
-
 
 var light = new THREE.PointLight(0xFFFFFF, 2, 1000);
 light.position.set(0,2,2);
@@ -67,4 +62,3 @@ function onMouseMove(event) {
 render();
 
 window.addEventListener('mousemove', onMouseMove);
-
