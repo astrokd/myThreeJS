@@ -14,5 +14,7 @@ Three JS learning repo
   * [https://www.youtube.com/channel/UCa4HiCMp9-3mRg2HpZvTJ9w](https://www.youtube.com/channel/UCa4HiCMp9-3mRg2HpZvTJ9w)
 - webGLearth
   * [http://learningthreejs.com/blog/2013/09/16/how-to-make-the-earth-in-webgl/](http://learningthreejs.com/blog/2013/09/16/how-to-make-the-earth-in-webgl/)
-
+   - [http://learningthreejs.com/data/2013-09-16-how-to-make-the-earth-in-webgl/demo/index.html](http://learningthreejs.com/data/2013-09-16-how-to-make-the-earth-in-webgl/demo/index.html)
+   - [http://planetpixelemporium.com/earth.html](http://planetpixelemporium.com/earth.html)
+   - [https://visibleearth.nasa.gov/collection/1484/blue-marble](https://visibleearth.nasa.gov/collection/1484/blue-marble)
 
