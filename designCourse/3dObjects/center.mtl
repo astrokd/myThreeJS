@@ -1,0 +1,6 @@
+newmtl Matte Brass_a6de6f82-e6ca-4145-b1b3-97b9b3dec064
+Kd 0.278 0.761 1.000
+d 1.000
+newmtl Glass Sanding 1_eabe3eb0-7cef-42fa-b44c-3b14151bfa9b
+Kd 1.000 1.000 1.000
+d 0.280
